@@ -1,0 +1,114 @@
+<!-- For everything but the Caesar Cipher, we will use the CryptoJS library for our encryption algorithms -->
+
+
+<!DOCTYPE html>
+<html>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+     <a  href="#"class="navbar-brand"><i class="fas fa-lock">   Password Encryptor</i></a>
+       <ul class="navbar-nav mr-auto">
+         <li class="nav-item">
+           <a href="#" class="nav-link">Saved Passwords</a>
+         </li>
+         <li class="nav-item">
+           <a href="#" class="nav-link">Create Password</a>
+         </li>
+         <li class="nav-item">
+           <a href="#" class="nav-link">Link 3</a>
+         </li>
+         <li class="nav-item">
+           <a href="#" class="nav-link">Link 4</a>
+         </li>
+       </ul>
+
+       <ul class="navbar-nav ml-auto">
+         <li class="nav-item">
+           <a href="#" class="nav-link"><i class="far fa-user">   Login</i></a>
+         </li>
+       </ul>
+   </nav>
+<head>
+
+	<title>Encryption Page</title>
+</head>
+
+    <div class="container-fluid">
+      <h3>
+        Create Password
+      </h3>
+    </div>
+    <br>
+      <div class="card bg-light text-dark">
+      <div class="card-body">This page allows you to encrypt a password using an encryption algorithm of your choice. Just enter your plaintext password in the box below, select the algorithm you'd like to use, and click the encrypt button.</div>
+      <br>
+    </div>
+
+    <div class="container-fluid">
+      <br>
+      <b>Password:</b><br>
+      <input type="text" id="password" name="Password" placeholder="Enter Your Password"> 
+      <br>
+      <br>
+    <b>Choose the Encryption Algorithm You Wish To Use From the Following Options:</b><br>
+      <select id="question" name="question">
+      <option value="Caesar's Cipher">Caesar's Cipher</option>
+      <option value="MD5">MD5</option>
+      <option value="SHA-1">SHA-1</option>
+      <option value="AES">AES</option>
+      <option value="DES">DES</option>
+      </select>
+      <br>
+      <br>
+      <br>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Encrypt!
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Your Encrypted Password:</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              skjfakhfajkma
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Save</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <a href="https://www.google.com" class="btn btn-info" role="button" >Logout</a>
+
+    </div>
+
+    </div>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>

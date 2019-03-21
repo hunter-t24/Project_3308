@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  </head>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+   <a  href="#"class="navbar-brand"><i class="fas fa-lock">   Password Encryptor</i></a>
+     <ul class="navbar-nav mr-auto">
+       <li class="nav-item">
+         <a href="#" class="nav-link">Saved Passwords</a>
+       </li>
+       <li class="nav-item">
+         <a href="#" class="nav-link">Create Password</a>
+       </li>
+       <li class="nav-item">
+         <a href="#" class="nav-link">Link 3</a>
+       </li>
+       <li class="nav-item">
+         <a href="#" class="nav-link">Link 4</a>
+       </li>
+     </ul>
+
+     <ul class="navbar-nav ml-auto">
+       <li class="nav-item">
+         <a href="#" class="nav-link"><i class="far fa-user">   Login</i></a>
+       </li>
+     </ul>
+ </nav>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>About Me</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <script>
+      function validate_password(){
+        if(document.getElementById("password").value != document.getElementById("confirmpass").value){
+          document.getElementById('message').style.color = 'red';
+          document.getElementById('message').innerHTML = 'Not Matching';
+        } else {
+          document.getElementById('message').style.color = 'green';
+          document.getElementById('message').innerHTML = 'Matching';
+        }
+      }
+    </script>
+
+    <form style="margin:20px 20px 20px 20px">
+      <div class="form-row">
+        <div class="form-group col">
+          <label for="">First Name</label>
+          <input type="text" class="form-control" placeholder="First Name">
+        </div>
+        <div class="form-group col">
+          <label for="">Last Name</label>
+          <input type="text" class="form-control" placeholder="First Name">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col">
+          <label for="username">Username:</label>
+          <input type="text" class="form-control" placeholder="Username" id="username" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" placeholder="Email" id="email">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col">
+          <label for="password">Password:</label>
+          <input type="password" name="password" class="form-control" placeholder="Password"
+            id="password"  onkeyup='validate_password();' required>
+        </div>
+        <div class="form-group col">
+          <label for="confirmpass">Confirm Password:</label>
+          <input type="password" name="confirmpass" class="form-control" placeholder="Confirm Password"
+          id="confirmpass"  onkeyup='validate_password();' required>
+          <span id='message'></span>
+        </div>
+      </div><br>
+      <button type="submit" class="btn-lg btn-primary">Register</button>
+
+    </form>
+  </body>
+</html>

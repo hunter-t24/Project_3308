@@ -78,12 +78,12 @@
 
             } else if (question == "AES") {
               var pass=document.getElementById("password").value;
-              var hash = CryptoJS.MD5(pass);
+              var hash = CryptoJS.AES.encrypt(pass, "Crypto");
               document.getElementById("out").innerHTML = hash;
 
             } else if (question == "SHA-512") {
               var pass=document.getElementById("password").value;
-              var hash = CryptoJS.SHA512(pass);
+              var hash = CryptoJS.SHA512(pass, "Crypto");
               var hashInBase64 = CryptoJS.enc.Base64.stringify(hash);
               hash = hashInBase64
               document.getElementById("out").innerHTML = hash;
@@ -119,6 +119,8 @@
 
 <!-- Crypto -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+
+<script src=”http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/aes.js"></script>
 
 <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
 

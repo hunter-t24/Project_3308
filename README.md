@@ -35,8 +35,9 @@ INSERT INTO users(username, password)
 VALUES('user1', 'crypto1'); /* samle user login credentials */
 
 2. Start the project:
-//Open a terminal in the backend folder and execute the following commands
-2a). node index.js
+
+2a). Open a terminal in the backend folder and execute the following commands:
+node index.js
 
 2b). Open the home page in localhost3000/home
 

@@ -1,6 +1,8 @@
 # Project_3308
 Main Project Repository for 3308
 
+This project consist of a webpage that allows a user to log in, enter a password, and have the password encrypted using an encryption algorithm of the user’s choice. 
+
 
 Repo Structure:
 This repo consist of code for our CSCI 3308 Project.  In this repo you can find source code for our project in two formats:

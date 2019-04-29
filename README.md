@@ -14,6 +14,7 @@ If you would like to run the project locally, then clone or download the 'local'
 1. Initialize the login databse:
 
 1a).
+
 sudo -u postgres psql
 
 1b).

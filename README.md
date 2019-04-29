@@ -8,6 +8,7 @@ Main Project Repository for 3308
 This repo consist of code for our CSCI 3308 Project.  In this repo you can find source code for our project in two formats:
 1. Local
 2. Heroku
+3. Test Classes
 
 If you would like to run the project locally, then clone or download the 'local' folder and then follow the instructions below:
 
@@ -44,4 +45,12 @@ VALUES('user1', 'crypto1');
 node index.js
 
 2b). Open the home page in localhost3000/home
+
+To run the test classes follow these instructions:
+
+Open the SpecRunner.html file in any web browser. Make sure all the appropriate files exist in the appropriate folders. The following 2 files are essential:
+
+1. src/Encryptor.js contains the actual encryption algorithims.
+
+2. spec/CipherSpec.js contains the various test cases.
 

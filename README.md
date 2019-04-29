@@ -5,7 +5,7 @@ Main Project Repository for 3308
 
 
 ## Repo Structure:
-This repo consist of code for our CSCI 3308 Project.  In this repo you can find source code for our project in two formats:
+This repo consist of code for our CSCI 3308 Project.  In this repo you can find source code for our project in two formats as well as test classes:
 1. Local
 2. Heroku
 3. Cipher Tests (Test Classes)

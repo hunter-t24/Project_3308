@@ -10,6 +10,7 @@ This repo consist of code for our CSCI 3308 Project.  In this repo you can find 
 2. Heroku
 3. Cipher Tests (Test Classes)
 
+## Instructions:
 If you would like to run the project locally, then clone or download the 'local' folder and then follow the instructions below:
 
 1. Initialize the login databse:

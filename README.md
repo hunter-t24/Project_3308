@@ -15,30 +15,30 @@ If you would like to run the project locally, then clone or download the 'local'
 1. Initialize the login databse:
 
 1a).
-
+```
 sudo -u postgres psql
-
+```
 1b).
-
+```
 create database login_db;
-
+```
 1c).
-
+```
 \c login_db;
-
+```
 1d). 
-
+```
 CREATE TABLE IF NOT EXISTS users(
   id SERIAL PRIMARY KEY,           
   username VARCHAR(50) NOT NULL,   
   password VARCHAR(50) NOT NULL);  
-
+```
 
 1e).
-
+```
 INSERT INTO users(username, password)
 VALUES('user1', 'crypto1'); 
-
+```
 2. Start the project:
 
 2a). Open a terminal in the backend folder and execute the following commands:

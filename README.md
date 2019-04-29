@@ -8,7 +8,7 @@ Main Project Repository for 3308
 This repo consist of code for our CSCI 3308 Project.  In this repo you can find source code for our project in two formats:
 1. Local
 2. Heroku
-3. Test Classes/Cipher Tests
+3. Cipher Tests (Test Classes)
 
 If you would like to run the project locally, then clone or download the 'local' folder and then follow the instructions below:
 

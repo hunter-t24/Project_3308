@@ -28,15 +28,15 @@ create database login_db;
 1d). 
 
 CREATE TABLE IF NOT EXISTS users(
-  id SERIAL PRIMARY KEY,           /* Unique identifier for each user */
-  username VARCHAR(50) NOT NULL,   /* The user's login name */
-  password VARCHAR(50) NOT NULL);  /* The user's password */
+  id SERIAL PRIMARY KEY,           
+  username VARCHAR(50) NOT NULL,   
+  password VARCHAR(50) NOT NULL);  
 
 
 1e).
 
 INSERT INTO users(username, password)
-VALUES('user1', 'crypto1'); /* samle user login credentials */
+VALUES('user1', 'crypto1'); 
 
 2. Start the project:
 

@@ -55,3 +55,4 @@ Open the SpecRunner.html file in any web browser. Make sure all the appropriate 
 
 2. spec/CipherSpec.js contains the various test cases.
 
+To see a final, deployed version of the app, visit heroku: https://crypto13308.herokuapp.com
